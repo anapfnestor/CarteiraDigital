@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A20BDF82-9371-48B8-8C33-3D4BF365F0DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarteiraDigital</RootNamespace>
+    <AssemblyName>CarteiraDigital</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MDISingleton.cs" />
+    <Compile Include="mdiTelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiTelaInicial.Designer.cs">
+      <DependentUpon>mdiTelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaSaqueDeposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaSaqueDeposito.Designer.cs">
+      <DependentUpon>TelaSaqueDeposito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaExtrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaExtrato.Designer.cs">
+      <DependentUpon>TelaExtrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaLogin.Designer.cs">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaNovoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaNovoCadastro.Designer.cs">
+      <DependentUpon>TelaNovoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pessoa.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="TelaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaMenu.Designer.cs">
+      <DependentUpon>TelaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaTransferencia.Designer.cs">
+      <DependentUpon>TelaTransferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="mdiTelaInicial.resx">
+      <DependentUpon>mdiTelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaSaqueDeposito.resx">
+      <DependentUpon>TelaSaqueDeposito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaNovoCadastro.resx">
+      <DependentUpon>TelaNovoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaExtrato.resx">
+      <DependentUpon>TelaExtrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaLogin.resx">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TelaMenu.resx">
+      <DependentUpon>TelaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaTransferencia.resx">
+      <DependentUpon>TelaTransferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun_Close_109090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun_Save_858111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun_Close_1090901.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun_back_2784542.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

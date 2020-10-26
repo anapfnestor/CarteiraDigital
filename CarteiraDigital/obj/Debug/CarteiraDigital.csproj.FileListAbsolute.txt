@@ -1,0 +1,16 @@
+C:\Projects\CarteiraDigital\CarteiraDigital\bin\Debug\CarteiraDigital.exe.config
+C:\Projects\CarteiraDigital\CarteiraDigital\bin\Debug\CarteiraDigital.exe
+C:\Projects\CarteiraDigital\CarteiraDigital\bin\Debug\CarteiraDigital.pdb
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.csprojAssemblyReference.cache
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.Properties.Resources.resources
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.csproj.GenerateResource.cache
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.csproj.CoreCompileInputs.cache
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.exe
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.pdb
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.formLogin.resources
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.mdiTelaInicial.resources
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.TelaNovoCadastro.resources
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.TelaExtrato.resources
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.TelaMenu.resources
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.TelaSaqueDeposito.resources
+C:\Projects\CarteiraDigital\CarteiraDigital\obj\Debug\CarteiraDigital.TelaTransferencia.resources
